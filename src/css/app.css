@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+
+/* Navigation */
+
+.site-logo {
+  @apply h-28 w-28 fill-current text-sky-600;
+}
+
+.menu-item {
+  @apply mx-2;
+}
+
+.current-menu-item {
+  @apply font-bold;
+}
+
+@tailwind utilities;
