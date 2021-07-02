@@ -1,5 +1,6 @@
 <?php
 
+// Enqueue Style & Script
 function add_theme_scripts() {
   wp_enqueue_style( 'style', get_stylesheet_uri() );
 
@@ -7,9 +8,18 @@ function add_theme_scripts() {
 
   wp_enqueue_style( 'app', get_template_directory_uri() . '/assets/css/app.css', array(), '1.0', 'all');
 
+  wp_enqueue_script( 'fa', 'https://kit.fontawesome.com/b62ddbc0aa.js', array (), '1.0', true);
+
   wp_enqueue_script( 'js', get_template_directory_uri() . '/assets/js/app.js', array (), '1.0', true);
 
 }
 add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
+
+// Add ACF Options page for Global Fields
+if( function_exists('acf_add_options_page') ) {
+
+	acf_add_options_page();
+
+}
 
 ?>

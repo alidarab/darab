@@ -1,8 +1,8 @@
 const colors = require("tailwindcss/colors");
 
 module.exports = {
-  purge: ["./*.php", "./template-parts/**/*.php"],
-  darkMode: "class",
+  purge: ["./*.php"],
+  darkMode: false,
   theme: {
     fontFamily: {
       sans: "soleil, Arial, sans-serif",
