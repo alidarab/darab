@@ -34,5 +34,9 @@ function register_cms_menu() {
  }
  add_action( 'init', 'register_cms_menu' );
 
+//  Add Support for Featured Images
+
+add_theme_support( 'post-thumbnails' );
+
 ?>
 
